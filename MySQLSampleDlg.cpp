@@ -53,7 +53,9 @@ END_MESSAGE_MAP()
 CMySQLSampleDlg::CMySQLSampleDlg(CWnd* pParent /*=nullptr*/)
 	: CDialogEx(IDD_MYSQLSAMPLE_DIALOG, pParent)
 {
+
 	m_hIcon = AfxGetApp()->LoadIcon(IDR_MAINFRAME);
+	ZeroMemory(&m_DBInfo, sizeof(m_DBInfo));
 }
 
 void CMySQLSampleDlg::DoDataExchange(CDataExchange* pDX)

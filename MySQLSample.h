@@ -15,10 +15,16 @@
 // 이 클래스의 구현에 대해서는 MySQLSample.cpp을(를) 참조하세요.
 //
 
+
 class CMySQLSampleApp : public CWinApp
 {
+private:
+	
+		
 public:
 	CMySQLSampleApp();
+	
+
 
 // 재정의입니다.
 public:
