@@ -64,11 +64,11 @@ void CSMSCheckDlg::ReadDBInfo()
 	GetPrivateProfileString(_T("Database"), _T("pwd"), _T("root"), m_DBInfo.dbpwd, MAX_STRING, fn);
 
 	// 테스트 프로그램 DB
-	GetPrivateProfileString(_T("Database"), _T("addr"), _T("59.16.190.84"), m_DBInfo.dbip, MAX_STRING, fn);
+	/*GetPrivateProfileString(_T("Database"), _T("addr"), _T("59.16.190.84"), m_DBInfo.dbip, MAX_STRING, fn);
 	m_DBInfo.dbport = GetPrivateProfileInt(_T("Database"), _T("port"), 3306, fn);
 	GetPrivateProfileString(_T("Database"), _T("dbname"), _T("NMS"), m_DBInfo.dbname, MAX_STRING, fn);
 	GetPrivateProfileString(_T("Database"), _T("id"), _T("root"), m_DBInfo.dbuser, MAX_STRING, fn);
-	GetPrivateProfileString(_T("Database"), _T("pwd"), _T("!gkszja123!@#"), m_DBInfo.dbpwd, MAX_STRING, fn);
+	GetPrivateProfileString(_T("Database"), _T("pwd"), _T("!gkszja123!@#"), m_DBInfo.dbpwd, MAX_STRING, fn)*/;
 
 }
 stDBInfo CSMSCheckDlg::GetDBInfo()
