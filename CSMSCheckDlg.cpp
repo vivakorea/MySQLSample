@@ -105,19 +105,19 @@ void CSMSCheckDlg::InsertSQL_small()
 	strSQL.Format("INSERT INTO WAIT_SMS(\
 							REQ_TIME,SND_NUM,\
 		                    RECV_NUM,SEND_MSG,\
-                            GROUP_ID,SMS_TYPE,\
+                            SMS_TYPE,\
 							PRIORITY, STATUS,\
 		                    TRY_COUNT) \
 			                VALUES(\'%s\',\'%s\',\
 		                           \'%s\',\'%s\',\
-                                   \'%s\',\'%c\',\
+                                   \'%c\',\
                                    \'%c\',\'%c\',\
                     	             %d);",
 						smsInfo.REQ_TIME,smsInfo.SND_NUM,
 						smsInfo.RECV_NUM,smsInfo.SEND_MSG,
-			    		smsInfo.GROUP_ID,smsInfo.SMS_TYPE,
+			    		smsInfo.SMS_TYPE,
 						smsInfo.PRIORITY,smsInfo.STATUS,
-						smsInfo.TRY_COUNT);  //16
+						smsInfo.TRY_COUNT);  
 
 	if (m_DB.InsertQuery(strSQL) == false)
 	{
@@ -206,8 +206,8 @@ BOOL CSMSCheckDlg::OnInitDialog()
 	CDialogEx::OnInitDialog();
 
 	
-	SetDlgItemText(IDC_EDIT_SND_NUM, "01089461439");
-	SetDlgItemText(IDC_EDIT_RECV_NUM, "01081696651");
+	SetDlgItemText(IDC_EDIT_SND_NUM, "01181461339");
+	SetDlgItemText(IDC_EDIT_RECV_NUM, "01191696651");
 	SetDlgItemText(IDC_EDIT_MSG, "NVR SMS Alarm Message");
 	return TRUE;  // return TRUE unless you set the focus to a control
 				  // 예외: OCX 속성 페이지는 FALSE를 반환해야 합니다.
